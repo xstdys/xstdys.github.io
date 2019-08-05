@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      第三篇 html要点 | 小石头的BLOG
+       | 小石头的BLOG
     
   </title>
   <meta name="author" content="xiaoshitou">
@@ -160,7 +160,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《第三篇 html要点》
+			当前文章&nbsp;:&nbsp;《》
 		
 	</p>
 
@@ -258,6 +258,18 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
 	 
 
 <div class="layout-post">
@@ -265,10 +277,6 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/07/24/html要点/" itemprop="url">
-		第三篇 html要点
-	</a>
-
 	</div>
 
 	<div class="article-meta">
@@ -279,9 +287,9 @@
 
 	发布于
 
-	<a href="/2019/07/24/html要点/" itemprop="url">
-		<time datetime="2019-07-24T06:01:36.000Z" itemprop="datePublished">
-	  		2019-07-24
+	<a href="/2019/08/05/php1/" itemprop="url">
+		<time datetime="2019-08-05T14:41:37.814Z" itemprop="datePublished">
+	  		2019-08-05
 	  </time>
 	</a>
 	&nbsp;
@@ -297,9 +305,9 @@
 
 	更新于
 
-	<a href="/2019/07/24/html要点/" itemprop="url">
-		<time datetime="2019-07-24T06:01:36.000Z" itemprop="dateUpdated">
-	  		2019-08-04
+	<a href="/2019/08/05/php1/" itemprop="url">
+		<time datetime="2019-08-05T14:41:37.814Z" itemprop="dateUpdated">
+	  		2019-08-06
 	  </time>
 	</a> 
 
@@ -318,7 +326,31 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：name=’John “ShotGun” Nelson’<br>class    为html元素定义一个或多个类名（classname）(类名从样式文件引入)<br>id    定义元素的唯一id<br>style    规定元素的行内样式（inline style）<br>title    描述了元素的额外信息 (作为工具条使用)<br>浏览器会自动地在段落的前后添加空行。<br>(</p> 是块级元素)<br>当显示页面时，浏览器会移除源代码中多余的空格和空行。所有连续的空格或空行都会被算作一个空格。<br>需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。<br>使用 target 属性，你可以定义被链接的文档在何处显示。<br>头部  使用 <base> 定义页面中所有链接默认的链接目标地址。<br>        使用 <meta> 元素来描述HTML文档的描述，关键词，作者，字符集等。<br>        <link> 标签定义了文档与外部资源之间的关系。<link> 标签通常用于链接到样式表。<p></p>
+		<hr>
+<p>title:PHP笔记（一）<br>date:2019-8-5  22:45:00</p>
+<h2 id="tags-php"><a href="#tags-php" class="headerlink" title="tags:php"></a>tags:php</h2><p>1、什么是PHP？为什么要学PHP？<br>  PHP是嵌入html页面中的脚本语言，是目前最流行的网站开发语言，在几乎所有的平台中都可以运行，很多的企业都在使用PHP作为开发语言。<br>2、PHP的基础规范<br>（1）PHP脚本以<?php 开始，以？>结束或者最后不加?><br>（2）php脚本可以单独存在，也可以与html页面结合<br>（3）php文件扩展名规范，一般是.php结尾，但是，可以使用其他命名，例如.phtml等。<br>3、准备PHP的环境<br>  phpstudy的安装使用：</p>
+<p>  安装好后，配置好，apache服务器的web服务器根目录，默认配置首页，配置日志记录，配置错误引导页面，配置php的扩展功能打开php_mysql.dll，再安装notepad++或者sublime text3.</p>
+<p>4、php的输入输出</p>
+<p>php的输出：echo  print  printf  sprintf  print_r  die  var_dump</p>
+<p>例如 echo “1123”；</p>
+<p>die 结束，不执行后面的；var_dump 可以显示数据类型；</p>
+<p><strong>echo</strong>(<strong>‘111<br>666’</strong>);<br><strong>print</strong> (<strong>‘111<br>666’</strong>);<br><em>var_dump</em>(<strong>‘222’</strong>);<em>//**显示数据类型</em><br><strong>die</strong>(<strong>‘**</strong>程序结束<strong>**’</strong>);</p>
+<p>5、变量的数据类型</p>
+<p>整型 （int）：整数；</p>
+<p>布尔型(bool)：true/false；</p>
+<p>字符串型(string)：“”   ‘’  &lt;&lt;&lt;EOF  EOF</p>
+<p>浮点型(float)：小数；</p>
+<p>数组(array):[1,2,4] 键值对[‘name’ =&gt;&gt;’zs’,’age’=&gt;&gt; 24]</p>
+<p>对象： new classname()</p>
+<p>资源类型：打开的文件 打开的网络连接 STDIN STDOUT</p>
+<p>备注：</p>
+<p>php的变量必须以$符号开始，后面跟着变量的名称。</p>
+<p>变量名必须与字母或者下划线字符开始，</p>
+<p>变量名必须只能包含字母数字字符以及下划线（A-z、0-9和_）,</p>
+<p>变量名不能包含空格，且区分大小写。</p>
+<p>定义变量：使用php中的函数define()来定义常量，常量在使用时，不需要$符号。</p>
+<p>6、常用的系统变量</p>
+<p><em>FILE</em>:php程序文件名/绝对路径<br><em>DIR</em>:被调用的文件脚本所在的目录<br><em>FUNCTION</em>:函数名<br><em>LINE</em>:php程序文件行数<br>PHP_VERSION:当前解析器的版本号<br>PHP_OS:执行当前PHP版本的操作系统名称<br>_<br>7 单引号与双引号的区别<br>php中将任意字符（除了单引号）放入单引号中，没有意义<br>在双引号中放入特殊字符，就会有特殊字符。<br>EOF中变量有意义，其他的特殊字符都没有意义。<br>转义：\  普通字符变为特殊字符,特殊字符转变为普通字符。<br><img src="/img/6.png" alt="6"><br><img src="/img/7.png" alt="7"></p>
 	
 	</div>
 	
@@ -338,7 +370,7 @@
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
 		
-			<a href="/2019/07/24/第二篇/" title="第二篇  建博客流程" rel="next">
+			<a href="/2019/08/05/the notes abou html/" title="第三篇 html要点" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -356,6 +388,30 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/08/05/the notes abou html/" title="第三篇 html要点">
+								第三篇 html要点			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								八月 5日, 2019				
+							</p>
+							<p class="relate-post-content">
+								一、html要点
+在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：name=’John “ShotGun” Nelson’class    为html元素定义一个或多个类名（classname）(类名从样式...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/08/05/the notes abou html/" title="第三篇 html要点">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="第三篇 html要点"/>
+							</a>
+						</div>
+					</li>											
+			
 			
 					<li>
 						<div class="relate-post-text">
